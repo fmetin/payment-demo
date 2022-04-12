@@ -1,0 +1,19 @@
+Example Payment Application Requirements:
+
+- Postgres DB: docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -p 5432:5432 -d postgres
+
+- You need payment api mock service for this demo application
+   url:
+      http://localhost:8888/v1/payment
+   response:
+      {
+           "responseCode": "0",
+           "responseMessage": "Success"
+      }
+
+Example Request:
+   {
+       "name": "name",
+       "surname": "surname",
+       "amount": 15.00
+   }
